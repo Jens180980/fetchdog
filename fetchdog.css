@@ -1,0 +1,29 @@
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+#sliderWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fetchDogWrap button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: none;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#fetchDogWrap select {
+  padding: 1rem;
+  width: 50%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
