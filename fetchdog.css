@@ -1,3 +1,7 @@
+body {
+  background-color: #f58342;
+}
+
 h1, h2 {
   text-align: center;
   text-transform: uppercase;
@@ -7,16 +11,17 @@ h2 {
   margin-top: 3rem;
 }
 
-#sliderWrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#dogImg {
+  display: block;
+  margin: auto;
+  height: 30vh;
 }
 
 #fetchDogWrap button {
-  margin: 1rem;
+  display: block;
+  margin: 1rem auto;
   padding: 1rem 2rem;
-  background-color: none;
+  background-color: #f58342;
   border: 2px solid black;
   cursor: pointer;
 }
@@ -26,4 +31,6 @@ h2 {
   width: 50%;
   margin-left: 50%;
   transform: translate(-50%);
+  background-color: #f58342;
+  border: 2px solid black;
 }

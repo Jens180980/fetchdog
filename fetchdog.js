@@ -1,30 +1,22 @@
 // Endpoints
 const randomUrl = "https://dog.ceo/api/breeds/image/random"
-let BreedURL
+let breedURL //Dynamic url
 
 // Loads random image on load and click
 window.onload = getDogs(randomUrl);
 newRandom.addEventListener('click', () => getDogs(randomUrl))
 
 // Gets random image from certain breeds
-
 dogBreed.addEventListener('click', () => {
-
   let dogBreedValue = dogBreed.value
   console.log(dogBreedValue)
-  BreedURL = `https://dog.ceo/api/breed/${dogBreedValue}/images/random`
-  getDogs(BreedURL)
-
+  breedURL = `https://dog.ceo/api/breed/${dogBreedValue}/images/random`
+  getDogs(breedURL)
 })
 
+sameBreed.addEventListener('click', () => getDogs(breedURL))
 
-// Downloads current image to desktop
-
-
-
-
-
-// Gets dogimage
+// Gets dogimages
 function getDogs(url) {
   fetch(url)
     .then(response => response.json())
